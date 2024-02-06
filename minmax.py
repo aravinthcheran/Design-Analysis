@@ -1,9 +1,8 @@
 #to find min and max value in a given array using divide and conquer approach
-from typing import List
+from array import array
 from typing import Tuple
 
-
-def min_max(arr: List[int]) -> Tuple[int, int]:
+def min_max(arr: array) -> Tuple[int, int]:
     low: int = 0
     high: int = len(arr) - 1
     if low == high:
