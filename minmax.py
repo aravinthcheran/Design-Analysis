@@ -9,8 +9,8 @@ def min_max(arr: array) -> Tuple[int, int]:
         return arr[low],arr[low]
     else:
         mid = (low + high) // 2
-        min1, max1 = min_max(arr[low:mid+1])
-        min2, max2 = min_max(arr[mid+1:high+1])
+        min1, max1 = min_max(arr[:mid+1])
+        min2, max2 = min_max(arr[mid+1:])
         return min1 if min1 < min2 else min2, max1 if max1 > max2 else max2
 
 
