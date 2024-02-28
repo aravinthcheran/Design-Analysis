@@ -1,2 +1,2 @@
 # Design analysis
-- design analysis, pthon for sem 4
+- design analysis, python for sem 4
