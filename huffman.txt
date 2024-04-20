@@ -2,12 +2,12 @@
 algorithm huffman(nodes[1...n])
     sort the array with the nodes in increasing order of their frequency
     for i = 1 to n - 1
-        create a new node with the two nodes with the lowest frequency as children
+        create a new node with the two nodes with the lowest frequency as children with smaller one as left child
         add the new node to the array
         remove the two nodes from the array
         sort the array with the nodes in increasing order of their frequency
     end for
-    return the root of the tree
+    return huffman-coding(nodes[1], "")
 end algorithm
 
 algorithm huffman-coding(node, code)
